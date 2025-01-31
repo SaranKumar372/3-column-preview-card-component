@@ -1,0 +1,97 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body, .full-content, .sedans, .suvs, .luxury {
+    display:flex;
+}
+
+body, button {
+    background-color:hsl(0, 0%, 95%);
+}
+
+.full-content {
+    width:60vw;
+    height:70vh;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", serif;
+    font-size:35px;
+    color:hsl(0, 0%, 95%);
+}
+
+p,button {
+    font-family: "Lexend Deca", serif;
+    font-size: 15px;
+}
+
+p {
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans, .suvs, .luxury {
+    padding:3em;
+    flex-direction: column;
+    gap:2em;
+}
+
+img {
+    height:3em;
+    width:4em;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans > button {
+    color:hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs > button {
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury > button {
+    color:hsl(179, 100%, 13%);
+}
+
+button {
+    margin-top:5em;
+    width:60%;
+    padding:1em;
+    border-radius:2em;
+}
+
+@media screen and (max-width:375px) {
+
+    .full-content {
+        flex-direction: column;
+        width:90vw;
+        height:100vh;
+        margin:4em 0em;
+    }
+    
+    button {
+        margin-top:1em;
+    }
+}
