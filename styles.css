@@ -20,7 +20,6 @@ body, button {
 
 .full-content {
     width:60vw;
-    height:70vh;
     border-radius: 0.5em;
     overflow: hidden;
 }
@@ -87,8 +86,7 @@ button {
     .full-content {
         flex-direction: column;
         width:90vw;
-        height:100vh;
-        margin:4em 0em;
+        margin-top:40em;
     }
     
     button {
